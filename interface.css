@@ -16,7 +16,7 @@
 .system{
 	
 	display: block;
-	position: fixed;
+	position: absolute;
 	top:10%;
 	right: 5%;
 	background-color: rgba(0, 0, 0, 0.2);
