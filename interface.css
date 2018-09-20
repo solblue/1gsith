@@ -31,6 +31,13 @@
 	right: 2%;
 }
 
+.objective{
+	display: block;
+	position: absolute;
+	top:2%;
+	left: 2%;
+}
+
 
 .button:hover {background-color: #981D1D}
 
