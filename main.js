@@ -85,3 +85,17 @@ var save = {
 localStorage.setItem("save",JSON.stringify(save));
 }
 
+function load(){
+	var savegame = JSON.parse(localStorage.getItem("save"));
+	if (typeof savegame.income !== "undefined") income = savegame.income;
+	if (typeof savegame.googles !== "undefined") googles = savegame.googles;
+	if (typeof savegame.facebooks !== "undefined") facebooks = savegame.facebooks;
+	if (typeof savegame.totalincome !== "undefined") totalincome = savegame.totalincome;
+	if (typeof savegame.salary !== "undefined") salary = savegame.salary;
+}
+
+function reset_game(){
+	localStorage.removeItem("save");
+	window.location.reload()
+}
+

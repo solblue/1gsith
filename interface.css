@@ -13,6 +13,17 @@
   box-shadow: 0 9px #999;
 }
 
+.system{
+	
+	display: block;
+	position: fixed;
+	top:10%;
+	right: 5%;
+	background-color: rgba(0, 0, 0, 0.2);
+	 border-radius: 15px;
+	padding:15px;
+}
+
 .button:hover {background-color: #981D1D}
 
 .button:active {
@@ -34,8 +45,14 @@
     cursor: pointer;
 }
 
-.button2 {background-color: #008CBA;} /* Blue */
+.button_b:active {
+  background-color:#03C;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: red;} 
 
 .frame
 {
