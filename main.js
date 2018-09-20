@@ -1,9 +1,15 @@
 var income = 0;
+var mouse_number = 0;
 
 function moneyClick(number){
     income = income + number;
 	document.getElementById("income").innerHTML = income;
+	mouse_number = mouse_number + number;
+	document.getElementById("mouse_number").innerHTML = mouse_number;
 };
+
+
+
 
 var googles = 0;
 
