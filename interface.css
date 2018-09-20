@@ -21,6 +21,22 @@
   transform: translateY(4px);
 }
 
+.button_b {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+
+
 .frame
 {
   border-radius: 25px;
@@ -151,4 +167,22 @@
 .fa-rss {
   background: #ff6600;
   color: white;
+}
+
+/* ===== Begin extra-space ===== */
+.extra-space-m {
+	width: 100%;
+	height: 20px;
+}
+.extra-space-l {
+	width: 100%;
+	height: 40px;
+}
+.extra-space-xl {
+	width: 100%;
+	height: 60px;
+}
+.extra-space-xxl {
+	width: 100%;
+	height: 80px;
 }
