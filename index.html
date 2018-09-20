@@ -4,18 +4,70 @@
 <link rel="stylesheet" type="text/css" href="interface.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>#THISG1</title>
 
 </head>
 
 <body>
 <div class="page-header text-center">
+<img src="https://i.imgur.com/gJ7qhzG.jpg"/><br />
+
 <h1><font color="#DDAA00">營收：HKD $<span id="income">0</span></font></h1>
+
+<h3><font color="brown">每秒賺緊： HKD $<span id="totalincome">0</span></font></h3>
 </div>
 <div class="devider"></div>
 <div class="row text-center">
 <button class="button" onClick="moneyClick(1)">課佢老母金</button>
 </div>
+
+<br /><br />
+
+<div class="row">
+
+<div class="col-md-2">
+</div>
+
+<div class="frame text-center col-md-3">
+
+<button class="fa fa-facebook" onClick="buyFacebook()"></button><BR>
+
+<h5 class="text-center"><font color="#brown">揾南亞佬like爆我地個page，今次仲唔fat fat?</font></h5>
+
+<h3>
+<B>Page Like: <span id="facebooks">0</span></B><br /><br />
+請多個南亞佬要幾錢:$ <span id="facebookCost">15</span>
+</h3>
+
+</div>
+<div class="col-md-2">
+</div>
+<div class="frame text-center col-md-3">
+
+
+<button class="fa fa-google" onClick="buyGoogle()"></button><BR>
+
+<h5 class="text-center"><font color="#brown">而家大數據時代，瘋狂整google banner丟比agent！</font></h5>
+
+<h3>
+<B>Set數: <span id="googles">0</span></B><br /><br />
+叫美術做多Set要幾多成本:$ <span id="googleCost">50</span>
+</h3>
+
+</div>
+<div class="col-md-2">
+</div>
+
+
+
+<div class="col-md-2">
+</div>
+
+
+
+</div>
+
 </body>
 <script type="text/javascript" src="main.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
