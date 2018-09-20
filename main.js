@@ -1,7 +1,7 @@
-var cookies = 0;
+var income = 0;
 
-function cookieClick(number){
-    cookies = cookies + number;
-	document.getElementById("cookies").innerHTML = cookies;
+function moneyClick(number){
+    income = income + number;
+	document.getElementById("income").innerHTML = income;
 };
 
