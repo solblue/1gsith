@@ -24,6 +24,14 @@
 	padding:15px;
 }
 
+.update_log{
+	display: block;
+	position: absolute;
+	top:2%;
+	right: 2%;
+}
+
+
 .button:hover {background-color: #981D1D}
 
 .button:active {

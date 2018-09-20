@@ -1,20 +1,26 @@
 var income = 0;
-var mouse_number = 0;
 
 function moneyClick(number){
+		
     income = income + number;
 	document.getElementById("income").innerHTML = income;
-	mouse_number = mouse_number + number;
-	document.getElementById("mouse_number").innerHTML = mouse_number;
+	
+
 };
-
-
-
+	
 
 var googles = 0;
 
 var totalincome = 0;
 
+ var clicks = 0;
+ 
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+	
+	
 
 function buyGoogle(){
     var googleCost = Math.floor(70 * Math.pow(1.14,googles));     //works out the cost of this cursor

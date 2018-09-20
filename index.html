@@ -26,7 +26,7 @@
 <div class="devider"></div>
 
 <div class="row text-center">
-	<button class="button" onClick="moneyClick(1)">課佢老母金</button>
+	<button class="button" onClick="moneyClick(1);onClick()">課佢老母金</button>
 </div>
 
 <div class="extra-space-xl" style="clear: both"></div>
@@ -38,7 +38,7 @@
 
 	<div class="frame opt1 text-center col-md-3">
 
-		<button class="fa fa-facebook" onClick="buyFacebook()"></button><BR>
+		<button class="button1 fa fa-facebook" onClick="buyFacebook()"></button><BR>
 
 		<h5 class="text-center"><font color="#brown">揾南亞佬like爆我地個page，今次仲唔fat fat?</font></h5>
 
@@ -109,8 +109,41 @@
 
 <button class="button_b button3" data-toggle="tooltip" data-placement="bottom" title="一禁就無晒D野，睇住呀！" onClick="reset_game()">RESET</button> 
 <br />
-<h5><b>點擊次數：<span id="mouse_number">0</span></b></h5>
+<h5><b>點擊次數：<span id="clicks">0</span></b></h5>
 </div>
+
+<div class="update_log"> Alpha 1 - <a data-toggle="modal" data-target="#class3">update log</a></div>
+
+                                        <!-- Modal -->
+<div id="class3" class="modal fade" role="dialog">
+  <div class="modal-dialog ">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      
+      <div class="modal-body"> 
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+     
+      <div class="extra-space-l"></div>
+  <p class="text-left" style="color:black;font-weight:400;font-size:18px;">Alpha 1 (20/9/2018) </p>    
+
+<b>‧新增遊戲選項： Facebook買like、Google Banner </b><br />
+<b>‧新增顯示： 點擊次數、每秒收入</b><br>
+<b>‧新增功能：儲存、讀取進度、刪除紀錄</b><br>
+
+<b>‧修正：點擊次數顯示出錯</b>
+        
+
+
+
+      </div>
+     <div class="extra-space-l"></div>
+    </div>
+
+  </div>
+</div>
+
 
 </body>
 <script type="text/javascript" src="main.js"></script>
