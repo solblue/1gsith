@@ -11,7 +11,7 @@ var totalincome = 0;
 
 
 function buyGoogle(){
-    var googleCost = Math.floor(50 * Math.pow(1.2,googles));     //works out the cost of this cursor
+    var googleCost = Math.floor(60 * Math.pow(1.1,googles));     //works out the cost of this cursor
     if(income >= googleCost){                                   //checks that the player can afford the cursor
         googles = googles + 1;                                   //increases number of cursors
     	income = income - googleCost;                          //removes the income spent
@@ -21,7 +21,7 @@ function buyGoogle(){
 		document.getElementById('totalincome').innerHTML = totalincome;
 		
     };
-    var nextCost = Math.floor(50 * Math.pow(1.2,googles));       //works out the cost of the next cursor
+    var nextCost = Math.floor(60 * Math.pow(1.1,googles));       //works out the cost of the next cursor
     document.getElementById('googleCost').innerHTML = nextCost;  //updates the cursor cost for the user
 };
 
@@ -44,6 +44,20 @@ function buyFacebook(){
 };
 
 
+var salary = 0;
+
+function paySalary(){
+    var salaryCost = Math.floor(9800 * Math.pow(1.023,salary));     //works out the cost of this cursor
+    if(income >= salaryCost){                                   //checks that the player can afford the cursor
+        salary = salary + 1;                                   //increases number of cursors
+    	income = income - salaryCost;                          //removes the income spent
+        document.getElementById('salary').innerHTML = salary;  //updates the number of cursors for the user
+        document.getElementById('income').innerHTML = income;  //updates the number of income for the user
+		
+    };
+    var nextCost = Math.floor(9800 * Math.pow(1.023,salary));       //works out the cost of the next cursor
+    document.getElementById('salaryCost').innerHTML = nextCost;  //updates the cursor cost for the user
+};
 
 
 
