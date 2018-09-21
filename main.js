@@ -127,6 +127,15 @@ function load(){
 	if (typeof savegame.videos !== "undefined") videos = savegame.videos;
 }
 
+
+function reset_game_confirm() {
+   if (confirm("你真係要刪除遊戲資料？"))
+   {
+	localStorage.removeItem("save");
+	window.location.reload()}
+	 else{}
+}
+
 function reset_game(){
 	localStorage.removeItem("save");
 	window.location.reload()
