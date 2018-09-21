@@ -13,6 +13,17 @@
   box-shadow: 0 9px #999;
 }
 
+.click_me{
+	cursor: pointer;
+	 border: none;
+}
+
+.click_me:active{
+	 box-shadow: 0 10px yellow;
+  transform: translateX(1px);
+}
+
+
 .system{
 	
 	display: block;
@@ -200,4 +211,49 @@
   background: #ff6600;
   color: white;
 }
+
+.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav_bar2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.nav_bar2  li {
+    float: left;
+	padding-left:20px;
+	font-size:20px;
+	
+}
+
+.nav_bar  li {
+    float: left;
+}
+
+.nav_bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_bar li a:hover {
+    background-color: #333;
+	text-decoration: none;
+}
+
+
+
+
+
 

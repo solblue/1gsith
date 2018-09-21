@@ -4,30 +4,54 @@
 
 <link rel="stylesheet" type="text/css" href="interface.css" />
 <link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="animate.css">
+
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>#THISG1</title>
 
 </head>
 
 <body>
+<ul class="nav_bar">
+  <li><a>#THISG1：為養活全公司同事數十個家庭而奮鬥</a></li>
+  <li style="float:right"><a data-toggle="modal" data-target="#setting" style="cursor:pointer" width="50px"><i class="fas fa-cog"></i></a></li>
+  <li style="float:right"><a data-toggle="modal" data-target="#update_log" style="cursor:pointer">update log</a></li>
+   
+</ul>
+
 <div class="page-header text-center">
-<img src="https://i.imgur.com/gJ7qhzG.jpg"/><br />
+    <ul class="nav_bar2">
+    <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+    <li><a><font color="#DDAA00">營收：HKD $<span id="income">0</span></font></a></li>
 
-<h1><font color="#DDAA00">營收：HKD $<span id="income">0</span></font></h1>
-
-<h3><font color="brown">每秒賺緊： HKD $<span id="totalincome">0</span></font></h3>
-
-</div>
-
-<div class="devider"></div>
-
+    <li><a><font color="brown">每秒賺緊： HKD $<span id="totalincome">0</span></font></a></li>
+    <li> &nbsp; &nbsp; &nbsp; &nbsp;</li>
+    <li> &nbsp; &nbsp; &nbsp; &nbsp;</li>
+    <li><a>點擊次數：<span id="clicks">0</span></a></li>
+    </div>
+    <div class="col-md-3"></div></div>
+    </ul>
+    
+    </div>
+    
+<div class="page-header text-center">
+<!--<img src="https://i.imgur.com/gJ7qhzG.jpg"/><br />
+<div class="extra-space-l" style="clear: both"></div>!-->
 <div class="row text-center">
-	<button class="button" onClick="moneyClick(1);onClick()">課佢老母金</button>
+	<a class="click_me" onClick="moneyClick(1);onClick()"><img src="click.png" /></a>
 </div>
+<div class="extra-space-xl" style="clear: both"></div>
+</div>
+
+
+
 
 <div class="extra-space-xl" style="clear: both"></div>
 
@@ -38,7 +62,7 @@
 
 	<div class="frame opt1 text-center col-md-2">
 
-		<button class="button1 fa fa-facebook" onClick="buyFacebook()"></button><BR>
+		<button class="button1" onClick="buyFacebook()"><img src="opt1.jpg" width="70%"/></button><BR>
 
 		<h5 class="text-center"><font color="#brown">揾南亞佬like爆我地個page，今次仲唔fat fat?</font></h5>
 
@@ -53,9 +77,9 @@
 	
     <div class="frame opt2 text-center col-md-2">
 
-		<button class="fa fa-google" onClick="buyGoogle()"></button><BR>
+		<button class="button1" onClick="buyGoogle()"><img src="opt2.jpg" width="70%"/></button><BR>
 
-		<h5 class="text-center"><font color="#brown">而家大數據時代，瘋狂整google banner丟比agent！</font></h5>
+		<h5 class="text-center"><font color="#brown">大數據時代，瘋狂整google banner丟比agent捽數！</font></h5>
 
 			<h3>
 			<B>Set數: <span id="googles">0</span></B><br /><br />
@@ -67,9 +91,9 @@
 
 <div class="frame opt3 text-center col-md-2">
 
-		<button class="fa fa-youtube" onClick="makeVideo()"></button><BR>
+		<button class="button1" onClick="makeVideo()"><img src="opt3.jpg" width="70%"/></button><BR>
 
-		<h5 class="text-center"><font color="#brown">平平地揾靚模同三四線KOL拍片宣傳</font></h5>
+		<h5 class="text-center"><font color="#brown">揾靚模做代言人加拍片宣傳</font></h5>
 
 			<h3>
 			<B>拍左幾條片: <span id="videos">0</span></B><br /><br />
@@ -89,8 +113,10 @@
 <div class="extra-space-xl" style="clear: both"></div>
 <div class="devider"></div>
 <div class="extra-space-xl" style="clear: both"></div>
+
 <div class="row text-center">
-<button class="button" onClick="paySalary()">做堅叔</button> <br /><br />
+<h1><b>堅叔之路</b></h1><br />
+<button class="button" data-toggle="tooltip" title="多謝老細！老細好野！"  onClick="paySalary()"><img src="https://i.imgur.com/gJ7qhzG.jpg" /></button> <br /><br />
 
  <h4 style="color: #000">今個月已經出左糧比幾多位同事：<span id="salary"><font color="red">0</font></span>/65</h4>
    <h4 style="color: #000">下位同事要幾多人工： $ <span id="salaryCost">10000</span></h4>
@@ -116,21 +142,13 @@
 
 <div class="devider"></div>
 <div class="extra-space-xl" style="clear: both"></div>
-<div class="system row text-center">
-<button class="button_b button2" data-toggle="tooltip" data-placement="bottom" title="禁一下就可以儲存，就算唔小心F5都可以LOAD番" onClick="save()">SAVE</button> 
 
-<button class="button_b button2" onClick="load()">LOAD</button> 
 
-<button class="button_b button3" data-toggle="tooltip" data-placement="bottom" title="一禁就無晒D野，睇住呀！" onClick="reset_game()">RESET</button> 
-<br />
-<h5><b>點擊次數：<span id="clicks">0</span></b></h5>
-</div>
 
-<div class="update_log"> Alpha 1 - <a data-toggle="modal" data-target="#class3">update log</a></div>
-<div class="objective"> <font color="#FF3300"><b>遊戲目標： 養活全公司同事幾十個家庭</b></font></div>
+
 
                                         <!-- Modal -->
-<div id="class3" class="modal fade" role="dialog">
+<div id="update_log" class="modal fade" role="dialog">
   <div class="modal-dialog ">
 
     <!-- Modal content-->
@@ -141,6 +159,10 @@
       <button type="button" class="close" data-dismiss="modal">&times;</button>
      
       <div class="extra-space-l"></div>
+      
+       <p class="text-left" style="color:black;font-weight:400;font-size:18px;">Alpha 2 (21/9/2018) </p>    
+<b>‧改善介面，提升玩家體驗</b><br>
+<div class="devider"></div>
   <p class="text-left" style="color:black;font-weight:400;font-size:18px;">Alpha 1 (20/9/2018) </p>    
 
 <b>‧新增購買選項： Facebook買like、Google Banner、拍片 </b><br />
@@ -159,12 +181,40 @@
   </div>
 </div>
 
+     <!-- Modal -->
+<div id="setting" class="modal fade" role="dialog">
+  <div class="modal-dialog ">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      
+      <div class="modal-body"> 
+    <div class="row text-center">
+<button class="button_b button2" data-toggle="tooltip" data-placement="bottom" title="禁一下就可以儲存，就算唔小心F5都可以LOAD番" onClick="save();save_success()">SAVE</button> 
+
+<button class="button_b button2" onClick="load();load_success()">LOAD</button> 
+
+<button class="button_b button3" data-toggle="tooltip" data-placement="bottom" title="一禁就無晒D野，睇住呀！" onClick="reset_game()">RESET</button> 
+<br />
+</div>
+        
+
+
+
+      </div>
+     <div class="extra-space-l"></div>
+    </div>
+
+  </div>
+</div>
+
 
 </body>
 <script type="text/javascript" src="main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap-notify.min.js"></script>
+  <script type="text/javascript"  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 <script>
 $(document).ready(function(){

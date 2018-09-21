@@ -132,3 +132,18 @@ function reset_game(){
 	window.location.reload()
 }
 
+function save_success() {
+$.notify({
+	icon: 'glyphicon glyphicon-star',
+	message: "已成功儲存!"},
+	{type: 'success',
+});
+}
+
+function load_success() {
+$.notify({
+	icon: 'glyphicon glyphicon-star',
+	message: "已成功讀取進度!"},
+	{type: 'success',
+});
+}
